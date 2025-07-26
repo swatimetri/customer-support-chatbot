@@ -1,0 +1,6 @@
+CREATE TABLE inventory (
+    product_id INT,
+    stock INT,
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+
