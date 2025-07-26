@@ -1,13 +1,11 @@
-// src/App.js
+import { ChatProvider } from './context/ChatContext';
 import ChatWindow from './components/ChatWindow';
 
 function App() {
   return (
-    <div className="App">
-      <h2>AI Chat</h2>
+    <ChatProvider>
       <ChatWindow />
-    </div>
+    </ChatProvider>
   );
 }
 
-export default App;
